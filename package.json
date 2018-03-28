@@ -4,6 +4,7 @@
   "description": "mot bao routing server",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "test"
   },
   "private": true,

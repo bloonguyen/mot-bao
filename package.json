@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "test"
+    "test": "test",
+    "heroku": "git add -A && git commit -m 'deploy heroku' && git push heroku master"
   },
   "private": true,
   "author": "bloo",

@@ -1,0 +1,19 @@
+{
+  "name": "mot-bao",
+  "version": "1.0.0",
+  "description": "mot bao routing server",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "private": true,
+  "author": "bloo",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "http": "0.0.0",
+    "morgan": "^1.9.0",
+    "request": "^2.85.0"
+  }
+}

@@ -13,7 +13,8 @@ server.use(morgan('combined'));
 
 server.use('/agent/routing',function(req,res,err) {
     console.log('req content ====> ',req.body);
-    res.json()
+
+    res.json(req.body);
 })
 
 server.listen((process.env.PORT || 3001),function() {

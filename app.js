@@ -69,8 +69,8 @@ server.use('/agent/routing',function(req,res,err) {
             } else {
               console.log(`  No intent matched.`);
             }
+            res.json(responses);
         })
-    res.json(responses);
 })
 
 server.listen((process.env.PORT || 3001),function() {

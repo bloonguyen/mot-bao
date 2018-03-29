@@ -7,8 +7,17 @@ const server = express();
 
 const projectId = "small-talk-2-8260e"; //small talk agent Id
 const sessionId = 'quickstart-session-id';
+var gcloud = require('google-cloud')({
+  projectId: projectId,
+
+  // The path to your key file:
+  keyFilename: './motBao-73970225caf1.json'
+});
+
+
 const dialogflow = require('dialogflow');
 const sessionClient = new dialogflow.SessionsClient();
+
 
 const sessionPath = sessionClient.sessionPath(projectId, sessionId);
 

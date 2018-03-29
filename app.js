@@ -12,6 +12,7 @@ server.use(bodyParser.json());
 server.use(morgan('combined'));
 
 server.use('/agent/routing',function(req,res,err) {
+    console.log('req content ====> ',req.body);
     res.json()
 })
 

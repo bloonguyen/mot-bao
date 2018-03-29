@@ -13,6 +13,24 @@ var gcloud = require('google-cloud')({
   // The path to your key file:
   keyFilename: './motBao-73970225caf1.json'
 });
+const Storage = require('@google-cloud/storage');
+
+const storage = new Storage();
+
+// Makes an authenticated API request.
+storage
+  .getBuckets()
+  .then((results) => {
+    const buckets = results[0];
+
+    console.log('Buckets:');
+    buckets.forEach((bucket) => {
+      console.log(bucket.name);
+    });
+  })
+  .catch((err) => {
+    console.error('ERROR:', err);
+  });
 
 
 const dialogflow = require('dialogflow');
